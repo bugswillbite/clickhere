@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>click me :)</title>
+  <link rel="stylesheet">
+ <style>
+.input{
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+}
+
+.button{
+font-family: Georgia, serif;
+font-size:30px;
+display: block;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-top: 420px;
+}
+
+
+.color {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, yellow 0%, green 25%, yellow 51%, #ff357f 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+ </style>
+
+</head>
+<body>
+
+<input type="button" class="button" value="click me! :)" onclick="popitup('hello3.html','newWindow','height=500,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
+
+<body bgcolor="red" class="color"></div>
+
+
+<script>
+
+function popitup(url) {
+newwindow=window.open(url,'name','height=200,width=150');
+if (window.focus) {newwindow.focus()}
+return false;
+}
+	</script>
+
+</body>
+</html>

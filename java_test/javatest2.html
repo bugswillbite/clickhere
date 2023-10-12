@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>click me :)</title>
+  <link rel="stylesheet">
+ <style>
+.button{
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+font-size:100px;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+}
+
+ </style>
+
+</head>
+<body>
+
+<input class="button" type="button" value="click me! :)" onclick="window.open('hello2.html','popUpWindow','height=500,width=400,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');">
+
+<a href="hello2.html" onclick="basicPopup(this.href);return false"</a>
+
+<script>
+function basicPopup(url) {
+popupWindow = window.open(url,'popUpWindow','height=500,width=500,left=100,top=100,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no, status=yes');
+	}
+	</script>
+
+</body>
+</html>
